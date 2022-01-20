@@ -1,0 +1,11 @@
+const cors = require('cors');
+const express = require('express');
+const bodyParser = require('body-parser');
+const errorController = require('./controllers/error');
+const app = express();
+app.use(cors());
+const appRoutes = require('./routes/Routes');
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(appRoutes);
+app.use(errorController.get404);
+app.listen(5000);

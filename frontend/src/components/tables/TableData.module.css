@@ -1,0 +1,33 @@
+
+.table{
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.table td {
+
+    border: 2px solid #c7a6f0;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.add, .edit{
+
+    color: #7035b9;
+    text-decoration: none;
+}
+
+.delete{
+    margin-left: 5px;
+}
+
+
+.delete:hover{
+color:red;
+}
+
+
+
